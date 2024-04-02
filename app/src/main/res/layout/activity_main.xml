@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/history_app_7_2"
+    android:orientation="vertical"
+    android:textAlignment="center">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/amarante"
+        android:hyphenationFrequency="normal"
+        android:inputType="text"
+        android:text="  The History App"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFD600"
+        android:textColorHint="@color/black"
+        android:textColorLink="#131111"
+        android:textSize="44sp"
+        android:textStyle="normal|bold|italic"
+        android:visibility="visible" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="51dp" />
+
+    <EditText
+        android:id="@+id/editNumberAge"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="number"
+        android:labelFor="@id/textView"
+        android:numeric="integer"
+        android:password="false"
+        android:text="&quot;Enter Age&quot;"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFD600"
+        android:textColorHint="#121111"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="65dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="168dp"
+            android:layout_height="71dp"
+            android:layout_gravity="clip_vertical|center_horizontal"
+            android:backgroundTint="#000000"
+            android:text="Clear"
+            android:textAllCaps="true"
+            android:textColor="#FFD600"
+            android:textColorHighlight="#FFD600"
+            android:textColorLink="#FFD600"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnAnswer"
+            android:layout_width="164dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#000000"
+            android:text="Generate Answer"
+            android:textAllCaps="true"
+            android:textColor="#FFD600"
+            android:textColorHighlight="#F6ECEC"
+            android:textColorLink="@color/white"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/displayResult"
+        android:layout_width="match_parent"
+        android:layout_height="292dp"
+        android:layout_gravity="center_horizontal"
+        android:inputType="text|textMultiLine"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFD600"
+        android:textIsSelectable="false"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+</LinearLayout>
